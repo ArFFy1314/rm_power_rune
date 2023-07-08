@@ -213,7 +213,7 @@ bool Detector::findCenter(cv::Point2f & center)
       bin_clone, std::to_string(rect.size().aspectRatio()), rect.tl(), cv::FONT_HERSHEY_SIMPLEX, 0.5,
       cv::Scalar(0, 255, 0), 2);
 
-    if (250 < rect.area() && rect.area() < 400) {
+    if (50 < rect.area() && rect.area() < 100) {
       center = center_ = (rect.br() + rect.tl()) * 0.5;
       return true;
     }
