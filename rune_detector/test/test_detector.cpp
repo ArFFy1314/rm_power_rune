@@ -53,7 +53,7 @@ TEST(test_detector, findArmor)
   detector->min_strip_ratio = 3.8;
   detector->max_strip_ratio = 4.6;
   detector->min_armor_area = 300;
-	detector->max_armor_area = 450;
+  detector->max_armor_area = 450;
 
   cv::RotatedRect armor;
   EXPECT_TRUE(detector->findArmor(armor));
